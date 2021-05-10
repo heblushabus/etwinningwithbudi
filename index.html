@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <p>
+      Telefondan oynamak için <a href="/2.0.apk">buradan</a> indirin.
+    </p>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -27,14 +30,13 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
+        <p>
+          Telefondan oynamak için <a href="/2.0.apk">buradan</a> indirin.
+        </p>
       </div>
       <div id="unity-footer">
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">eTwinning with Budi</div>
-        <p>
-          Telefona indirmek için <a href="/2.0.apk">buraya</a> tıklayın.
-        </p>
       </div>
     </div>
     <script>
@@ -68,7 +70,7 @@
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
-        config.devicePixelRatio = 1;
+        //config.devicePixelRatio = 1;
         mobileWarning.style.display = "block";
         setTimeout(() => {
           mobileWarning.style.display = "none";
