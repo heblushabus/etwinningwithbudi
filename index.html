@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <script data-ad-client="ca-pub-6120013022559325" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVX0C5BJNR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GVX0C5BJNR');
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>eTwinning with Budi</title>
+    <title>Unity WebGL Player | eTwinning with Budi</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <p>
-      Telefondan oynamak için <a href="/2.0.apk">buradan</a> indirin.
-    </p>
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -30,30 +17,25 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-        <p>
-          Telefondan oynamak için <a href="/2.0.apk">buradan</a> indirin.
-        </p>
+        WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">eTwinning with Budi</div>
-        
-    <p>
-      Telefondan oynamak için <a href="/2.0.apk">buradan</a> indirin.
-    </p>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/v2.0.loader.js";
+      var loaderUrl = buildUrl + "/2.1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/v2.0.data.unityweb",
-        frameworkUrl: buildUrl + "/v2.0.framework.js.unityweb",
-        codeUrl: buildUrl + "/v2.0.wasm.unityweb",
+        dataUrl: buildUrl + "/2.1.data.unityweb",
+        frameworkUrl: buildUrl + "/2.1.framework.js.unityweb",
+        codeUrl: buildUrl + "/2.1.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "heblushabus",
         productName: "eTwinning with Budi",
-        productVersion: "2.0",
+        productVersion: "2.1",
       };
 
       var container = document.querySelector("#unity-container");
